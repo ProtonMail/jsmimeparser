@@ -1,6 +1,6 @@
 {
   "name": "@protontech/jsmimeparser",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "An asynchronous MIME parser written in JavaScript",
   "main": "index.js",
   "types": "index.d.ts",
