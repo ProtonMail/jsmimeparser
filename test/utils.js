@@ -129,8 +129,6 @@ export function read_file_raw(file) {
     });
 }
 
-export function isWebKit() {
-  // simply testing the 'webkit' appears in the userAgent is not enough, as that is the case for
-  // any browser running on macOS.
-  return !navigator.userAgent.toLowerCase().includes('chrome') && !navigator.userAgent.toLowerCase().includes('firefox')
+export function isFirefox() {
+  return navigator.userAgent.toLowerCase().includes('firefox')
 }

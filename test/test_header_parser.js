@@ -1,7 +1,7 @@
 
 import { assert } from "chai";
 import { headerparser } from "../lib/jsmime";
-import { isWebKit } from "./utils";
+import { isFirefox } from "./utils";
 
 function arrayTest(data, fn) {
   fn.toString = function() {
@@ -1132,7 +1132,7 @@ describe("headerparser", function() {
       // GyRCJCIbKEI= is the base64 encoding of ESC$B$"ESC(B.
       [
         "=?ISO-2022-JP?B?GyRCJCIbKEI=?==?ISO-2022-JP?B?GyRCJCIbKEI=?=",
-        isWebKit() ? "あ\ufffdあ" : "ああ" // see https://github.com/ProtonMail/jsmimeparser/issues/1
+        isFirefox() ? "ああ" : "あ\ufffdあ" // see https://github.com/ProtonMail/jsmimeparser/issues/1
       ],
 
       // Tolerate invalid split of character, € = 0xE2 0x82 0xAC in UTF-8.
