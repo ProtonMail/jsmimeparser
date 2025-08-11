@@ -1,7 +1,7 @@
 export type Headers = { [key: string]: string[] };
 
 interface Attachment {
-  content: Uint8Array;
+  content: Uint8Array<ArrayBuffer>;
   headers: Headers;
   size: number;
   fileName?: string;
