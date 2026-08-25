@@ -1,5 +1,5 @@
 
-import { assert } from "chai";
+import { assert } from "vitest";
 import { headerparser } from "../lib/jsmime";
 import { isFirefox } from "./utils";
 

@@ -1,4 +1,4 @@
-import { expect } from "chai";
+import { expect } from "vitest";
 import { read_file_raw } from "./utils";
 import { parseMail } from "../";
 import { uint8ArrayToString } from "../lib/utils";

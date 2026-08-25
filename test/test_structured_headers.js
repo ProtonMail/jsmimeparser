@@ -1,4 +1,4 @@
-import { assert } from "chai";
+import { assert } from "vitest";
 import { headerparser } from "../lib/jsmime";
 
 function smartDeepEqual(actual, expected) {
