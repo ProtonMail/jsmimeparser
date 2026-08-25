@@ -1,4 +1,4 @@
-import { assert } from "chai";
+import { assert } from "vitest";
 import { read_file } from "./utils";
 import { MimeParser, headerparser } from "../lib/jsmime";
 

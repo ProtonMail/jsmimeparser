@@ -1,5 +1,5 @@
 
-import { assert } from 'chai';
+import { assert } from "vitest";
 import { headeremitter } from '../lib/jsmime';
 import { MockDate } from "./utils";
 

@@ -1,5 +1,5 @@
 
-import { assert } from "chai";
+import { assert } from "vitest";
 import { headeremitter, headerparser } from "../lib/jsmime";
 
 describe("Custom decoder support", function() {

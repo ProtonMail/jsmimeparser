@@ -90,7 +90,7 @@ const file_cache = {};
 export function read_file(file, start = undefined, end = undefined) {
   if (!(file in file_cache)) {
     var realFile = new Promise(function(resolve, reject) {
-      fetch('base/test/data/' + file)
+      fetch('/' + file)
         .then(response => response.ok ? response.arrayBuffer() : reject(new Error('error fetching file')))
         .then(buffer => {
           resolve(new Uint8Array(buffer))
@@ -120,7 +120,7 @@ export function read_file(file, start = undefined, end = undefined) {
 
 export function read_file_raw(file) {
   return new Promise(function(resolve, reject) {
-      fetch('base/test/data/' + file)
+      fetch('/' + file)
         .then(response => response.ok ? response.arrayBuffer() : reject(new Error('error fetching file')))
         .then(buffer => {
           resolve(new Uint8Array(buffer))
