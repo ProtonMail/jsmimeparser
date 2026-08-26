@@ -129,6 +129,6 @@ export function read_file_raw(file) {
     });
 }
 
-export function isFirefox() {
-  return navigator.userAgent.toLowerCase().includes('firefox')
+export function isChromium() {
+  return navigator.userAgent.toLowerCase().includes('chrome')
 }
