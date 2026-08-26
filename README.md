@@ -1,3 +1,7 @@
+> DEPRECATION NOTICE: the jsmimeparser code is now part of [Proton WebPackages](https://github.com/ProtonMail/WebPackages), and the [`@protontech/jsmimeparser`](https://www.npmjs.com/package/@protontech/jsmimeparser) npm package has been deprecated in favor of [`@protontech/crypto`](https://www.npmjs.com/package/@protontech/crypto) .
+
+<hr>
+
 This is a fork of [mozilla-comm/jsmime](https://github.com/mozilla-comm/jsmime) that has been updated to include the changes made in [mozilla/releases-comm-central](https://github.com/mozilla/releases-comm-central/tree/master/mailnews/mime/jsmime) (incl. UTF-7 support).
 Further, the library now uses ES6 modules and exposes a user-friendly `parseMail` function.
 
